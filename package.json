@@ -11,17 +11,19 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && node --test",
     "prepublishOnly": "npm test"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
     "@types/node": "^22.15.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.3"
   }
 }
